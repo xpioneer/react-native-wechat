@@ -24,7 +24,7 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    console.log(this)
+    // console.log(this)
     // $http.get('http://127.0.0.1:8020/api/test', {
     //   // callback: 'recommend'
     // }).then(res => {
@@ -57,7 +57,7 @@ export default class Home extends Component {
             <View><Text>热门</Text></View>
           </ScrollView>
         </View>
-        <ScrollView onScrollEndDrag={this.handleScrollEnd}>
+        <ScrollView>
           <View style={styles.listWrap}>
             {
               list.map((item, index) => {
@@ -70,6 +70,7 @@ export default class Home extends Component {
             }
             
             <View>
+              <Text>hello</Text>
               <Image style={{width: 185, height: 185}} source={{uri: 'https://img12.360buyimg.com/n2/s315x315_jfs/t1/30707/12/11351/470878/5cb45320Ec4526280/ca4d6058b09e241e.jpg'}}></Image>
               <Image style={{width: 185, height: 185}} source={{uri: 'https://img12.360buyimg.com/n2/s315x315_jfs/t1/30707/12/11351/470878/5cb45320Ec4526280/ca4d6058b09e241e.jpg'}}></Image>
             </View>

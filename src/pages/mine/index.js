@@ -29,25 +29,25 @@ export default class Mine extends Component {
   }
 
   showName = (e) => {
-    console.log(e, 'show', Actions)
+    console.log('show')
     Actions.login({needLogin: true})
   }
 
   headerFun = (e) => {
-    console.log(e, 'headerFun')
+    console.log('headerFun')
   }
 
   nickName = (e) => {
-    console.log(e)
+    // console.log(e)
   }
 
   goSetting = (e) => {
-    console.log(e, 'setting')
+    console.log('setting', 12, 99)
     Actions.push('setting', {hehe: 'heheda'})
   }
 
   goDemo = (e) => {
-    console.log(e, 'demos')
+    console.log('demos')
     Actions.push('demos', {hehe: 'heheda'})
   }
 

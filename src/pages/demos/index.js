@@ -23,7 +23,7 @@ import { arrowRightUrl } from '../../config/global'
 
 
 function openWebView() {
-  Actions.demoWebview({source: 'https://www.qq.com'})
+  Actions.demoWebview({source: 'https://app-treasure.myocard.cn'})
 }
 
 function showToast() {

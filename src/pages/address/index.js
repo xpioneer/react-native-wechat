@@ -38,7 +38,7 @@ export default class Adress extends Component {
 
   componentDidMount() {
     this.need = this.props.needLogin
-    console.log('login mounted', this.need)
+    console.log('address mounted', this.need)
   }
 
   render() {
