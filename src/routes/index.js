@@ -13,21 +13,18 @@ const tabs = [
 	{
 		key: 'home',
 		title: '微信',
-		// path: '',
 		icon: TabIcon,
 		component: Home
 	},
 	{
 		key: 'address',
 		title: '通讯录',
-		// path: 'mine',
 		icon: TabIcon,
 		component: Address
 	},
 	{
 		key: 'discovery',
 		title: '发现',
-		// path: 'demos',
 		icon: TabIcon,
 		component: Discovery
 	},

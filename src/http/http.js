@@ -1,5 +1,5 @@
 import { Platform } from 'react-native'
-import { HOST } from '../config'
+import { HOST, APPNAME, VERSION } from '../config'
 
 /**
  * Http Request
@@ -8,7 +8,7 @@ class Http {
 
   fetch(url, init) {
     // set header
-    let headers = new Headers({ 'user-agent': 'ACard' + Platform.OS + Platform.Version })
+    let headers = new Headers({ 'user-agent': `${APPNAME}${VERSION}` + Platform.OS + Platform.Version })
     for(key in init.headers) {
       headers.append(key, init.headers[key])
     }

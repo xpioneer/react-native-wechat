@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView, View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux'
 import { ATouchable } from '../../components/touchable'
+import { arrowRightUrl } from '../../config/global'
 // import { observer } from 'mobx-react';
 // import { action } from 'mobx';
 
@@ -23,8 +24,7 @@ export default class Mine extends Component {
     this.data = {
       name: 23, price: 233, count: 123,
       image: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566486859064&di=c4d4560e33cd954922054f9d1ad432c6&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh1%2Fh991%2Fimg201712091729030_info400X400.jpg', isSelected: true,
-      payUrl: 'https://acard-static.oss-cn-shenzhen.aliyuncs.com/aCardPay.png',
-      arrow: 'https://acard-static.oss-cn-shenzhen.aliyuncs.com/arrowRight.png'
+      payUrl: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1257180244,1181127241&fm=26&gp=0.jpg',
     };
   }
 
@@ -81,7 +81,7 @@ export default class Mine extends Component {
               <Image style={{height: 30, width: 30, marginRight: 10}} source={{uri: payUrl}}></Image>
               <Text style={{fontSize: 16}}>支付</Text>
             </View>
-            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrow}}></Image>
+            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrowRightUrl}}></Image>
           </ATouchable>
         </View>
 
@@ -91,21 +91,21 @@ export default class Mine extends Component {
               <Image style={{height: 30, width: 30, marginRight: 10}} source={{uri: payUrl}}></Image>
               <Text style={{fontSize: 16}}>收藏</Text>
             </View>
-            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrow}}></Image>
+            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrowRightUrl}}></Image>
           </ATouchable>
           <ATouchable style={styles.item}>
             <View style={styles.itemL}>
               <Image style={{height: 30, width: 30, marginRight: 10}} source={{uri: payUrl}}></Image>
               <Text style={{fontSize: 16}}>相册</Text>
             </View>
-            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrow}}></Image>
+            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrowRightUrl}}></Image>
           </ATouchable>
           <ATouchable style={styles.item}>
             <View style={styles.itemL}>
               <Image style={{height: 30, width: 30, marginRight: 10}} source={{uri: payUrl}}></Image>
               <Text style={{fontSize: 16}}>卡包</Text>
             </View>
-            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrow}}></Image>
+            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrowRightUrl}}></Image>
           </ATouchable>
         </View>
 
@@ -115,7 +115,7 @@ export default class Mine extends Component {
               <Image style={{height: 30, width: 30, marginRight: 10}} source={{uri: payUrl}}></Image>
               <Text style={{fontSize: 16}}>设置</Text>
             </View>
-            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrow}}></Image>
+            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrowRightUrl}}></Image>
           </TouchableOpacity>
         </View>
 
@@ -125,7 +125,7 @@ export default class Mine extends Component {
               <Image style={{height: 30, width: 30, marginRight: 10}} source={{uri: payUrl}}></Image>
               <Text style={{fontSize: 16}}>Demo</Text>
             </View>
-            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrow}}></Image>
+            <Image style={{height: 16, width: 8, resizeMode: 'contain'}} source={{uri: arrowRightUrl}}></Image>
           </TouchableOpacity>
         </View>
 

@@ -28,7 +28,8 @@ export const routes = [
 	{
 		key: 'demoWebview',
 		title: '',
-		component: DemoWebView
+		component: DemoWebView,
+		hideNavBar: true,
 	},
 	{
 		key: 'inputPage',

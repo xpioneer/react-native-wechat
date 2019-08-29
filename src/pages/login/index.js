@@ -17,7 +17,6 @@ export default class Login extends Component {
   }
 
   login = (e) => {
-    console.log(this)
     if(this.need) {
       Actions.pop()
     }

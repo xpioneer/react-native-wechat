@@ -19,11 +19,11 @@ import {
 // } from 'react-native/Libraries/NewAppScreen';
 import { Actions } from 'react-native-router-flux'
 import { ATouchable } from '../../components/touchable'
-import { arrowRightUrl } from '../../config/global'
+import { arrowRightUrl } from '../../config'
 
 
 function openWebView() {
-  Actions.demoWebview({source: 'https://app-treasure.myocard.cn'})
+  Actions.demoWebview({source: 'https://www.baidu.com'})
 }
 
 function showToast() {
